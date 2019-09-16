@@ -1,0 +1,29 @@
+
+{
+    "name": "svikramjeet/hello",
+    "type": "library",
+    "description": "test package",
+    "keywords": ["php", "git", "pre commit", "hook"],
+    "homepage": "https://github.com/svikramjeet/git-hook",
+    "license":"MIT",
+    "require": {
+        "php": ">5.6",
+        "campaignmonitor/createsend-php": "5.0.*"
+    },
+    "require-dev": {
+        "php": ">5.6"
+    },
+    "authors": [
+        {
+            "name": "svikramjeet",
+            "email": "vikkramjeet@gmai.com",
+            "homepage": "http://svikramjeet.me",
+            "role": "creator"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Svikramjeet\\Hello\\": "src/"
+        }
+    }
+}

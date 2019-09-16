@@ -1,0 +1,32 @@
+<?php
+
+namespace Svikramjeet\CampaignMonitor\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Svikramjeet\CampaignMonitor\CampaignMonitor;
+
+class CampaignMonitorServiceProvider extends ServiceProvider
+{
+    protected $defer = true;
+
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__.'/../config/campaignmonitor.php' => config_path('campaignmonitor.php'),
+        ], 'config');
+    }
+
+    public function register()
+    {
+        $this->mergeConfigFrom(__DIR__.'/../config/campaignmonitor.php', 'campaignmonitor');
+
+        $this->app->singleton('campaignmonitor', function ($app) {
+            return new CampaignMonitor($app);
+        });
+    }
+
+    public function provides()
+    {
+        return ['campaignmonitor'];
+    }
+}
