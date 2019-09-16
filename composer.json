@@ -1,10 +1,10 @@
 
 {
-    "name": "svikramjeet/hello",
+    "name": "svikramjeet/campaignmonitor",
     "type": "library",
-    "description": "test package",
-    "keywords": ["php", "git", "pre commit", "hook"],
-    "homepage": "https://github.com/svikramjeet/git-hook",
+    "description": "campaignmonitor - wrapper of official campaignmonitor php package",
+    "keywords": ["php", "git", "campaignmonitor", "wrapper"],
+    "homepage": "https://github.com/svikramjeet/campaignmonitor",
     "license":"MIT",
     "require": {
         "php": ">5.6",
@@ -16,14 +16,14 @@
     "authors": [
         {
             "name": "svikramjeet",
-            "email": "vikkramjeet@gmai.com",
+            "email": "vikkramjeet@gmail.com",
             "homepage": "http://svikramjeet.me",
             "role": "creator"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Svikramjeet\\Hello\\": "src/"
+            "Svikramjeet\\CampaignMonitor\\": "src/"
         }
     }
 }
