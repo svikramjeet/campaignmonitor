@@ -2,9 +2,9 @@
 
 namespace Svikramjeet\CampaignMonitor;
 
-use Svikramjeet\CampaignMonitor\Contracts;
+use Svikramjeet\CampaignMonitor\Contracts\Campaign as Contract;
 
-class CampaignMonitor  implements Contracts
+class CampaignMonitor  implements Contract
 {
     protected $app;
     protected $api_key;
