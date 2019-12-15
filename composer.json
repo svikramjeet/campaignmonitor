@@ -25,5 +25,16 @@
         "psr-4": {
             "Svikramjeet\\CampaignMonitor\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Svikramjeet\\CampaignMonitor\\Providers\\CampaignMonitorServiceProvider"
+            ],
+            "aliases": {
+                "CampaignMonitor": "Svikramjeet\\CampaignMonitor\\Facades\\CampaignMonitor"
+            }
+        }
     }
+
 }
